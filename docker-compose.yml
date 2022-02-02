@@ -1,0 +1,24 @@
+version: '3'
+services:
+  jupyter_basic:
+    build: .
+    entrypoint: ./entrypoint.sh
+    volumes:
+      - notebooks:/notebooks
+      - data:/data
+    ports:
+      - "8889:8889"
+volumes:
+  notebooks:
+    driver: local
+    driver_opts:
+       o: bind
+       type: none
+       device: /Users/pete/Code/geopandas_tutorial/notebooks
+  data: 
+    driver: local
+    driver_opts:
+      o: bind
+      type: none
+      device: /Users/pete/Data/
+  
