@@ -4,6 +4,6 @@ Prerequisites:
 - Docker desktop
 - docker-compose
 
-To run the container, navigate to the directory containing the docker-compose file then run: 
+To run the container, navigate to the directory containing the compose file (docker-compose.yml) then run: 
 
 `docker-compose up`
